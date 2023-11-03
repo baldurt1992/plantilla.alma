@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
-    
+   
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -33,7 +33,7 @@
         <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
             <a href="index.html" class="navbar-brand px-lg-4 m-0">
                 <img class="m-0 display-4 text-uppercase text-white" style="width: 200px; height: 100px"
-                            src="img/images/logoalma.png" alt="">
+                src="img/images/logoalma.png" alt="">
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -57,79 +57,62 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
         <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
-            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Reseñas</h1>
+            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Registro</h1>
             <div class="d-inline-flex mb-lg-5">
                 <p class="m-0 text-white"><a class="text-white" href="">Inicio</a></p>
                 <p class="m-0 text-white px-2">/</p>
-                <p class="m-0 text-white">Reseñas</p>
+                <p class="m-0 text-white">Registro</p>
             </div>
         </div>
     </div>
     <!-- Page Header End -->
 
 
-    <!-- Testimonial Start -->
-    <div class="container-fluid py-5">
+    <!-- Contact Start -->
+    <div class="container-fluid pt-5">
         <div class="container">
             <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Reseñas</h4>
-                <h1 class="display-4">Nuestros clientes dicen</h1>
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Formulario de Registro</h4>
             </div>
-            <div class="owl-carousel testimonial-carousel">
-                <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/reseña-1.jpg" alt="">
-                        <div class="ml-3">
-                            <h4>Nairo Quintana</h4>
-                            <i>Ciclista profesional</i>
-                        </div>
-                    </div>
-                    <p class="m-0"> "¡El café de este lugar es excepcional! Siempre fresco y con un sabor robusto que me despierta por la mañana para poder entrenar. La rápida entrega y el servicio amable hacen de este café mi lugar favorito para empezar el día."</p>
+            <div class="row">
+                <div class="col-md-3 pb-8">
+                    
                 </div>
-                <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/reseña-2.jpg" alt="">
-                        <div class="ml-3">
-                            <h4>Rafael Novoa</h4>
-                            <i>Actor Colombiano</i>
-                        </div>
+                <div class="col-md-6 pb-5">
+                    <div class="contact-form">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="control-group">
+                                <input type="text" class="form-control bg-transparent p-4" id="name" placeholder="Nombre completo"
+                                    required="required" data-validation-required-message="Please enter your name" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="email" class="form-control bg-transparent p-4" id="email" placeholder="Correo Electrónico"
+                                    required="required" data-validation-required-message="Please enter your email" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control bg-transparent p-4" id="subject" placeholder="Asunto"
+                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            
+                            <div class="control-group">
+                                <select class="form-control bg-transparent py-3 px-4" rows="5"  aria-invalid="false" id="147:0" class="slds-select" data-aura-rendered-by="164:0"><option disabled="" value="Género" data-aura-rendered-by="148:0">Género</option><option  value="M" data-aura-rendered-by="150:0">Mujer</option><option value="H" data-aura-rendered-by="152:0">Hombre</option><option value="O" data-aura-rendered-by="154:0">Otro</option></select>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit" id="sendMessageButton">Enviar</button>
+                            </div>
+                        </form>
                     </div>
-                    <p class="m-0">"No soy un gran conocedor de café, pero este lugar me ha convertido en uno. La variedad de granos y métodos de preparación es impresionante. Siempre encuentro algo nuevo para probar."</p>
-                </div>
-                <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/reseña-3.jpg" alt="">
-                        <div class="ml-3">
-                            <h4>Rigoberto Urán</h4>
-                            <i>Ciclista profesional</i>
-                        </div>
-                    </div>
-                    <p class="m-0">"Este café es simplemente increíble. La selección de granos es excepcional y la forma en que preparan cada taza es una verdadera obra de arte. Si eres un amante del café, no puedes perderte este lugar. ¡Mijo, que chimba de café!"</p>
-                </div>
-                <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/reseña-4.jpg" alt="">
-                        <div class="ml-3">
-                            <h4>Edilberto Reyes</h4>
-                            <i>Revueltero</i>
-                        </div>
-                    </div>
-                    <p class="m-0">"El café aquí es de alta calidad.Es uno de mis cafés favoritos para disfrutar de una buena taza en la mañana." !Péguele¡</p>
-                </div>
-                <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/reseña-5.jpg" alt="">
-                        <div class="ml-3">
-                            <h4>Lee Jared Escobar Gómez</h4>
-                            <i>Docente</i>
-                        </div>
-                    </div>
-                    <p class="m-0"> Primero que todo, recuerde que yo tengo seis ojos y seis oídos. "¡El café despierta mis sentidos!</p>
                 </div>
             </div>
+            
         </div>
     </div>
-    <!-- Testimonial End -->
+    <!-- Contact End -->
 
 
     <!-- Footer Start -->
@@ -137,7 +120,7 @@
         <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Contacto</h4>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>Girardota Antioquia-Vereda Encenillo</p>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Girardota Antioquia-Verede Encenillo</p>
                 <p><i class="fa fa-phone-alt mr-2"></i>+57 3129652386</p>
                 <p class="m-0"><i class="fa fa-envelope mr-2"></i>Dubercarmona87@gmail.com</p>
             </div>
