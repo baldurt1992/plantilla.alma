@@ -60,7 +60,6 @@
         <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
             <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Registro</h1>
             <div class="d-inline-flex mb-lg-5">
-                <p class="m-0 text-white"><a class="text-white" href="index.html">Inicio</a></p>
                 <p class="m-0 text-white px-2"></p>
                 <p class="m-0 text-white"></p>
             </div>
@@ -93,7 +92,7 @@
                   
                                     <div class="d-flex flex-row align-items-center mb-4">
                                       <div class="form-outline flex-fill mb-0">
-                                        <input type="text" id="form3Example1c" class="form-control" />
+                                        <input required="required" data-validation-required-message="Please enter your name" type="text" id="form3Example1c" class="form-control" />
                                         <label class="form-label" for="form3Example1c">Nombre completo</label>
                                       </div>
                                     </div>
@@ -101,7 +100,7 @@
                                     <div class="d-flex flex-row align-items-center mb-4">
                                     
                                       <div class="form-outline flex-fill mb-0">
-                                        <input type="email" id="form3Example3c" class="form-control" />
+                                        <input required="required" data-validation-required-message="Please enter your email" type="email" id="form3Example3c" class="form-control" />
                                         <label class="form-label" for="form3Example3c">Correo Electrónico</label>
                                       </div>
                                     </div>
@@ -109,7 +108,7 @@
                                     <div class="d-flex flex-row align-items-center mb-4">
                                        
                                         <div class="form-outline flex-fill mb-0">
-                                          <input type="number" id="form3Example3c" class="form-control" />
+                                          <input required="required" data-validation-required-message="Please enter your phone" type="tel" id="form3Example3c" class="form-control" />
                                           <label class="form-label" for="form3Example3c">Celular</label>
                                         </div>
                                       </div>
@@ -117,7 +116,7 @@
                                     <div class="d-flex flex-row align-items-center mb-4">
                                        
                                         <div class="form-outline flex-fill mb-0">
-                                          <input type="text" id="form3Example3c" class="form-control" />
+                                          <input required="required" data-validation-required-message="Please enter your address" type="text" id="form3Example3c" class="form-control" />
                                           <label class="form-label" for="form3Example3c">Dirección</label>
                                         </div>
                                       </div>
@@ -126,21 +125,21 @@
                                   
                                         <div class="form-outline flex-fill mb-0">
                                           <input type="text" id="form3Example3c" class="form-control" />
-                                          <label class="form-label" for="form3Example3c">Ocupación</label>
+                                          <label required="required" data-validation-required-message="Please enter your ocupation" class="form-label" for="form3Example3c">Ocupación</label>
                                         </div>
                                       </div>
                                     
                                     <div class="d-flex flex-row align-items-center mb-4">
                                       
                                       <div class="form-outline flex-fill mb-0">
-                                        <input type="password" id="form3Example4c" class="form-control" />
+                                        <input required="required" data-validation-required-message="Please enter your password" type="password" id="form3Example4c" class="form-control" />
                                         <label class="form-label" for="form3Example4c">Contraseña</label>
                                       </div>
                                     </div>
                   
                                     <div class="d-flex flex-row align-items-center mb-4">
                                                                             <div class="form-outline flex-fill mb-0">
-                                        <input type="password" id="form3Example4cd" class="form-control" />
+                                        <input required="required" data-validation-required-message="Please confirm your password" type="password" id="form3Example4cd" class="form-control" />
                                         <label class="form-label" for="form3Example4cd">Confirmar contraseña</label>
                                       </div>
                                     </div>
@@ -153,7 +152,29 @@
                                     </div>
                   
                                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                                      <button type="button" class="btn btn-primary btn-lg">Registrarse</button>
+                                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        Registrarse
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                            <div class="modal-body">
+                                            Te has registrado correctamente.
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
                                     </div>
                   
                                   </form>

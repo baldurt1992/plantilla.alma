@@ -11,6 +11,9 @@
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -60,7 +63,6 @@
         <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
             <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Tus compras</h1>
             <div class="d-inline-flex mb-lg-5">
-                <p class="m-0 text-white"><a class="text-white" href="index.html">Inicio</a></p>
                 <p class="m-0 text-white px-2"></p>
                 <p class="m-0 text-white"></p>
             </div>
@@ -76,6 +78,31 @@
                 <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Tu carrito</h4>
                 <h1 class="display-4"></h1>
             </div>
+            
+            <a href="https://wa.me/3137999976"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Pagar
+            </button></a><br> <br><br>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pagos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                    Serás redireccionado a la pasarela de pagos.
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Ir</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-lg-6">
                     <div class="row align-items-center mb-5">
@@ -140,29 +167,29 @@
                             <button type="button" class="btn btn-primary">Cantidad: 4</button>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        Comprar
+                </div>
+            </div>
+            <a href="https://wa.me/3137999976"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Pagar
+            </button></a>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pagos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
                     </button>
-                    
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Pagos</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            </div>
-                            <div class="modal-body">
-                            Serás redireccionado a la pasarela de pagos.
-                            </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Ir</button>
-                            </div>
-                        </div>
-                        </div>
                     </div>
+                    <div class="modal-body">
+                    Serás redireccionado a la pasarela de pagos.
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Ir</button>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>

@@ -60,7 +60,6 @@
         <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
             <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Contacto</h1>
             <div class="d-inline-flex mb-lg-5">
-                <p class="m-0 text-white"><a class="text-white" href="index.html">Inicio</a></p>
                 <p class="m-0 text-white px-2"></p>
                 <p class="m-0 text-white"></p>
             </div>
@@ -85,12 +84,12 @@
                 <div class="col-sm-4 text-center mb-3">
                     <i class="fa fa-2x fa-phone-alt mb-3 text-primary"></i>
                     <h4 class="font-weight-bold">Teléfono</h4>
-                    <p>+57 3129652386</p>
+                    <p>+57 3137999976</p>
                 </div>
                 <div class="col-sm-4 text-center mb-3">
                     <i class="far fa-2x fa-envelope mb-3 text-primary"></i>
                     <h4 class="font-weight-bold">Correo</h4>
-                    <p>Dubercarmona@gmail.com</p>
+                    <p>almacafecontacto@gmail.com</p>
                 </div>
             </div>
             <div class="row">
@@ -114,6 +113,11 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
+                                <input type="tel" class="form-control bg-transparent p-4" id="phone" placeholder="Celular"
+                                    required="required" data-validation-required-message="Please enter your phone" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
                                 <input type="text" class="form-control bg-transparent p-4" id="subject" placeholder="Asunto"
                                     required="required" data-validation-required-message="Please enter a subject" />
                                 <p class="help-block text-danger"></p>
@@ -125,7 +129,29 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
-                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit" id="sendMessageButton">Enviar</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                    Enviar
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                        Tu formulario ha sido enviado correctamente.
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
                             </div>
                         </form>
                     </div>
